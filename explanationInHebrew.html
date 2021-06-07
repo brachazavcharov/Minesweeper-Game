@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="winStyleSheet.css" rel="stylesheet" />
+</head>
+<body dir="ltr">
+    <audio autoplay="autoplay" loop="loop">
+        <source src="%d7%a6%d7%9c%d7%99%d7%9c%d7%99%d7%9d/AK005.WAV " />
+    </audio>
+    <div id="allScreen">
+        <header id="exTitle"> An Explanation</header>
+      <div id="allLeft">
+          <button id="translate" onclick="openNewPage()">
+              to english
+          </button>
+        </div>
+        <div id="allMiddle">
+            <div>
+                <p id="exP">
+                    על מנת לנצח במשחק שולה מוקשים יש " למצוא"  את המוקשים שבטבלה
+                    <br />
+                    , בכל שלב ישנם מספר שונה של מוקשים אשר יוצג בדף המשחק<br /> 
+                    על מנת לדעת היכן המוקשים נמצאים תחילה יש ללחוץ על אחד התאים שבטבלת המשחק<br />
+                    . בעת הלחיצה יופיע בתא מספר המוקשים הנמצאים בתאים הסמוכים לתא הלחוץ<br />
+                    כאשר "תגלו" מיקום של מוקש יש ללחוץ על התא באמצעות הלחצן הימני ומיד יופיע <br />
+                    .בתא סימן אזהרה וזאת בכדי להזכיר למשחק את המקומות שאותם חושב למוקשים<br />
+                    ... לאחר שתסמנו את כל התאים הממוקשים תדעו אם צדקתם<br />
+                    . יש להיזהר שלא ללחוץ על תא ממוקש  במקרה של לחיצה על תא שבו מוקש תאלצו להתחיל מההתחלה<br />
+                    . רק לאחר שהצלחתם לעבור את השלב הנוכחי תוכלו לעבור לשלב הבא<br />
+                    ! מקווים שתהנו,בהצלחה
+                </p>
+                <div id="gif"></div>
+                <div>
+                    <a id="home" class="Button" href="homePage.html">home</a>
+                </div>
+            </div>
+
+        </div>
+        <div id="allRight">
+
+        </div>
+    </div>
+    <div id="allRight"></div>
+    <script>
+        function openNewPage() {
+            window.location = "explainationPage.html";
+        }
+    </script>
+</body>
+</html>

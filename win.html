@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="winStyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <audio autoplay="autoplay" >
+            <source src="%d7%a6%d7%9c%d7%99%d7%9c%d7%99%d7%9d/CHEER2.WAV " />
+    </audio>
+    <div id="allScreen">
+        <div id="allLeft">
+            <img class="likes" src="pictures/grayLike.png" />
+            <img  src="pictures/pinkLike.png" />
+            <img class="likes" src="pictures/grayLike.png" />
+            <img  src="pictures/pinkLike.png" />
+        </div>
+        <div id="allMiddle">
+            <div class="title">
+               <p class="status-head">great</p>
+               <p class="you-status"> you won!!!</p>
+            </div>
+            <div id="gif"></div>
+            <div>
+                <button id="next" class="Button" onclick="nextLevel()">next</button>
+                <a id="home" class="Button" href="homePage.html">home</a>
+                <button id="replay" onclick="replay()" class="Button">replay</button>
+            </div>
+        </div>
+        <div id="allRight">
+            <img class="likes left" src="pictures/לייק אפור לימין.png" />
+            <img class="left" src="pictures/ליק ורוד לימין.png" />
+            <img class="likes left"  src="pictures/לייק אפור לימין.png" />
+            <img class="left"src="pictures/ליק ורוד לימין.png" />
+        </div>
+    </div>
+    <script>
+     function replay() {
+         window.location="HtmlPage2.html";
+        }
+        function nextLevel() {
+            //localStorage - אחסון מידע משותף לכל הדפים באפליקציה
+            //אובייקט שנוסיף לו תכונות
+            //בדוגמא הבאה: הוספת תכונה ששם התכונה הוא לוול והערך הוא 1 
+            //localStorage.setItem("level", 1);
+            // אפשר לקבל את תכונות האובייקט
+            //בדוגמא הבאה: קבלת הערך של לוול 
+            //localStorage.getItem("level");
+            var level = parseInt(localStorage.getItem("level"));
+            if (level != 3)
+            {
+                localStorage.setItem("level", level + 1);
+                replay();
+            }
+            else
+                location ="endPage.html"
+
+        }
+    </script>
+</body>
+</html>

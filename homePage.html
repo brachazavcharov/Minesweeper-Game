@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="homeS.css" rel="stylesheet" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body dir="ltr">
+    <audio autoplay="autoplay" loop="loop">
+        <source src="%d7%a6%d7%9c%d7%99%d7%9c%d7%99%d7%9d/AK005.WAV " />
+    </audio>
+    <div id="allScreen">
+     
+        <div id="aboutPage" class="Button">
+            <a href="aboutPage.html">
+                <img id="imgPlay" src="pictures/תמונה3.png" />
+            </a>
+        </div>
+        <div id="explaination"class="Button">
+            <a href="explainationPage.html">
+                <img id="imgPlay" src="pictures/תמונה2.png" />
+            </a>
+        </div>
+        <div id="theGame"class="Button">
+            <a href="HtmlPage2.html">
+                <img id="imgPlay" src="pictures/תמונה1.png" />
+            </a>
+        </div>
+        <footer id="title">MineSweeper </footer>
+    </div>
+   <script>
+       function main(){
+           localStorage.setItem("level", 1);
+       }
+       main();
+   </script>
+</body>
+</html>

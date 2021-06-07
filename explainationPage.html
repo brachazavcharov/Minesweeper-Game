@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="winStyleSheet.css" rel="stylesheet" />
+</head>
+<body dir="ltr">
+    <audio autoplay="autoplay" loop="loop">
+        <source src="%d7%a6%d7%9c%d7%99%d7%9c%d7%99%d7%9d/AK005.WAV " />
+    </audio>
+    <div id="allScreen">
+        <header id="exTitle"> An Explanation</header>
+       <div id="allLeft">
+        <button id="translate"onclick="openNewPage()" >to hebrew
+       </button>
+       </div>
+        <div id="allMiddle">
+            <div>
+                <p id="exP">
+                    In order to win a minesweeper game you must "find" the mines in the table.
+                    <br>
+                    At each stage, there are different numbers of mines that will be displayed
+                    <br>
+                    on the game page, to know where the mines are: first, click on one of the cells
+                    <br>
+                    in the game table.
+                    When you find a mine location, right-click the cell and you will immediately
+                    <br>
+                    see a warning sign in the cell to remind the player the places of the mines that he thinks.
+                    <br>
+                    Once you've checked all the mined cells you'll know if you were right ...
+                    <br>
+                    Be careful not to press a mine cell in case of a cell where a mine is forced to
+                    <br>
+                    start from the beginning.
+                    <br>
+                    Only after you have succeeded in the current level you can move on to the next level.
+                    <br>
+                    Hope you enjoy it, good luck!
+                </p>
+                <div id="gif"></div>
+                <div>
+                    <a id="home" class="Button" href="homePage.html">home</a>
+                </div>
+            </div>
+
+        </div>
+        <div id="allRight">
+
+        </div>
+    </div>
+    <div id="allRight"></div>
+    <script>
+        function openNewPage() {
+            window.location = "explanationInHebrew.html";
+        }
+    </script>
+</body>
+</html>

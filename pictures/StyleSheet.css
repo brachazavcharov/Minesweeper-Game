@@ -1,0 +1,82 @@
+﻿*{
+    vertical-align:top;
+}
+body{
+    overflow:hidden;
+}
+#allScreen {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('pictures/מגוון רקעים 37.jpg');
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
+}
+#allMiddle {
+    width: 33.33vw;
+    height: 100vh;
+    /*background-color: black;*/
+    display: inline-block;
+    opacity: 0.6;
+}
+#game {
+    width: 33.33vw;
+    height: 33.33vw;
+    background-color: white;
+    border:solid;
+}
+td {
+    /* border: solid; */
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 0 0 4px grey;
+    vertical-align: middle;
+    line-height: 0.3;
+    box-shadow: inset -1px -1px 5px 3px black;
+    cursor:pointer;
+}
+
+table
+{
+    border-collapse:collapse;
+}
+#allLeft {
+    width: 33vw;
+    height: 100vh;
+    background-size: cover;
+    display: inline-block;
+}
+#allRight {
+    width: 33vw;
+    display: inline-block;
+    background-size: cover;
+    height: 100vh;
+}
+#topMiddle {
+    width: 33vw;
+    display: block;
+    height: 19vh;
+}
+p{
+    width:50vw;
+    height:20vh;
+}
+#titleGame{
+    font-size:150px;
+    margin-left:25vw;
+}
+.side {
+    background-color: #808080;
+    width: 10vw;
+    height: 50vh;
+    margin-left: 11.7vw;
+    margin-top: 7vh;
+    background-color: #b5abab;
+    border: 6px #808080;
+    border-style: outset;
+    display: block;
+    text-align: center;
+    box-sizing: content-box;
+    font-size: 50px;
+    color: white;
+    text-decoration-line: none;
+}

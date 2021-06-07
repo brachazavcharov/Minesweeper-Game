@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="winStyleSheet.css" rel="stylesheet" />
+    <script>
+        function replay() {
+            window.location = "HtmlPage2.html";
+        }
+        function nextLevel() {
+            //localStorage - אחסון מידע משותף לכל הדפים באפליקציה
+            //אובייקט שנוסיף לו תכונות
+            //בדוגמא הבאה: הוספת תכונה ששם התכונה הוא לוול והערך הוא 1
+            //localStorage.setItem("level", 1);
+            // אפשר לקבל את תכונות האובייקט
+            //בדוגמא הבאה: קבלת הערך של לוול
+            //localStorage.getItem("level");
+            var level = parseInt(localStorage.getItem("level"));
+            localStorage.setItem("level", level + 1);
+            replay();
+        }
+    </script>
+</head>
+<body>
+    <audio autoplay="autoplay"  >
+            <source src="%d7%a6%d7%9c%d7%99%d7%9c%d7%99%d7%9d/PIANOTG1.WAV" />
+    </audio>
+    <div id="allScreen">
+        <div id="allLeft">
+            <img class="likes" src="pictures/בוז אפור לשמאל לצד שמאל.png" />
+            <img src="pictures/בוז ורוד לשמאל לצד שמאל.png" /> 
+            <img class="likes " src="pictures/בוז אפור לשמאל לצד שמאל.png" />
+            <img src="pictures/בוז ורוד לשמאל לצד שמאל.png" />
+        </div>
+        <div id="allMiddle">
+            <div class="title">
+                <p class="status-head">oops</p>
+                <p class="you-status"> game over!</p>
+            </div>
+            <div id="gif"></div>
+            <div>        
+                <a id="home" class="Button" href="homePage.html">home</a>
+                <button id="replay" onclick="replay()" class="Button">replay</button>
+            </div>
+        </div>
+        <div id="allRight">
+            <img class="likes left" src="pictures/בוז אפור לשמאל.png" />
+            <img class="left " src="pictures/בוז ורוד לשמאל.png" />
+            <img class="likes left" src="pictures/בוז אפור לשמאל.png" />
+            <img class="left " src="pictures/בוז ורוד לשמאל.png" />
+            <!--<img class="likes left" src="pictures/בוז אפור לשמאל.png" />
+    <img class="left" src="pictures/בוז ורוד לשמאל.png" />
+    <img class="likes left" src="pictures/בוז אפור לשמאל.png" />
+    <img class="left" src="pictures/בוז ורוד לשמאל.png" />-->
+        </div>
+    </div>
+
+</body>
+</html>
